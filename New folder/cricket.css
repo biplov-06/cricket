@@ -1,0 +1,147 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:0%;
+}
+.document{
+    margin-top: 200px;
+}
+body {
+    background-color: #000000;
+    font-family: "Lobster", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid rgba(170, 165, 165, 0.467);
+    box-shadow: 5px 3px 0px 0px rgba(170, 165, 165, 0.558);
+    border-radius: 10px;
+    cursor: context-menu;
+    width: 500px;
+    max-height: max-content;
+    margin: auto;
+    justify-content: center;
+}
+
+.runs, .ball, .extra {
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    background-color: #015186;
+}
+
+.score, .scoredRun {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.circle {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: max-content;
+    width: max-content;
+    padding: 0 5px;
+}
+
+.extraA {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: none;
+    min-width: 60px;
+    margin-top: 10px;
+}
+.Run_scored{
+    display: flex;
+    gap: 5px;
+    height: 30px;
+    min-width: 200px;
+    max-width: max-content;
+    margin-top: 20px;
+
+}
+.result {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid rgba(170, 165, 165, 0.467);
+    box-shadow: 5px 5px 0px 0px rgba(170, 165, 165, 0.467);
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    width: 60%;
+   margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 10px;
+        gap: 10px;
+        width: 60%;
+    }
+
+    .runs, .ball, .extra {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .score, .scoredRun {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    .result{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        justify-content: end;
+        padding: 5px;
+        gap: 5px;
+        margin-top: 100px;
+
+    }
+
+    .runs, .ball, .extra {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .score, .scoredRun {
+        font-size: 0.8rem;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    .result{
+        flex-wrap: wrap;
+        max-height: 100%;
+
+      
+    }
+    .Run_scored{
+        flex-wrap: wrap;
+        height: max-content;
+    }
+}
